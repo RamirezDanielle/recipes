@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.container {
+    background:url(img/index_photo.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 8%;
+
+}
+
+
+.col {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+form {
+    background: black;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+#login_form{
+    left: -300px;
+}
+
+#reg_form {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#indicator {
+    width: 100px;
+    border: none;
+    height: 3px;
+    background: #555;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+h1 {
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 60px;
+    
+}
+
+h2 {
+    font-family: "Climate Crisis", sans-serif;
+    
+}
