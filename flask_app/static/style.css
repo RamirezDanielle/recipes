@@ -3,28 +3,40 @@
     margin: 0px;
 }
 
+/* ----login and register---- */
 
-
-.container {
-    background:url(img/index_photo.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    width: 100%;
-    height: 100vh;
+.header {
+    background-size: cover;
+    background-position: center;
     padding: 10px 8%;
-
+    position: relative;
 }
 
+h1 {
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 80px;
+    color: darkseagreen;
+}
 
+h2 {
+    font-family: "Climate Crisis", sans-serif;
+    
+}
+
+span {
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 20px;
+    color: darkseagreen;
+}
 .col {
     flex-basis: 50%;
-    min-width: 300px;
+    min-width: 350px;
 }
 
-form {
-    background: black;
-    width: 300px;
-    height: 400px;
+.form-container{
+    width: 320px;
+    height: 600px;
+    display: flex;
     position: relative;
     text-align: center;
     padding: 20px 0;
@@ -32,10 +44,9 @@ form {
     overflow: hidden;
 }
 
-.form span{
+.form-container span{
     font-weight: bold;
     padding: 0 10px;
-    color: whitesmoke;
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -46,8 +57,9 @@ form {
 }
 
 .form-container form{
-    max-width: 300px;
+    max-width: 250px;
     padding: 0 20px;
+    display: block;
     position: absolute;
     top: 130px;
     transition: transform 1s;
@@ -93,14 +105,41 @@ form a {
     transition: transform 1s;
 }
 
+/* -----dashboard page----- */
 
-h1 {
-    font-family: "Climate Crisis", sans-serif;
-    font-size: 60px;
-    
+#dashboard {
+    background: rgb(148, 191, 62);
 }
 
-h2 {
+.navbar {
+    justify-content: end;
+}
+
+.navbar a {
+    text-decoration: none;
     font-family: "Climate Crisis", sans-serif;
-    
+}
+
+#dashboard .container {
+    width: 100%;
+    height: 100vh;
+    background:url(img/meatloaf.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.dash_header h1 {
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+}
+
+table {
+    font-family: "Wix Madefor Display", sans-serif;
+}
+
+table a {
+    font-family: "Wix Madefor Display", sans-serif;
 }
