@@ -128,18 +128,37 @@ form a {
     background-position: center;
     padding: 10px 8%;
     position: relative;
+   
 }
 
-.dash_header h1 {
+.dash_header h1, h4 {
     font-size: 25px;
     color: black;
     margin-left: 10px;
+    font-family: "Climate Crisis", sans-serif;
 }
+
+/* h4 {
+    font-family: "Climate Crisis", sans-serif;
+    color: black;
+    margin-left: 10px;
+   
+} */
+
 
 table {
     font-family: "Wix Madefor Display", sans-serif;
+   
 }
 
 table a {
     font-family: "Wix Madefor Display", sans-serif;
 }
+
+table, th, td {
+    background: #9c3c3c;
+    text-align: center;
+ 
+   
+  }
+
