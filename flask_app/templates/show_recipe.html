@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     <title>Recipes</title>
 </head>
-<body>
+<body id="recipe">
     <div class="container">
     <div class="navbar m-1 d-flex justify-content-end">
             <a href="/dashboard" class="text-dark p-2">BACK TO RECIPES</a>
@@ -18,9 +18,9 @@
         </div>
         <div class="header m-2">
         <h1>Welcome, {{user.first_name}} {{user.last_name}}</h1>
+    </div>
+    <div class="card p-2" >
         <h2>{{recipe.name}}</h2>
-        </div>
-        <div class="card text-left m-2 p-3" style="width: 50rem;">
         <p>Description: {{recipe.description}}</p>
         <p>Under 30 Minutes:
             {% if recipe.under30 == 1 %}
@@ -33,5 +33,6 @@
         <p>Date Made: {{recipe.date_made}}</p>
         </div>
     </div>
+    <img src="/static/img/index_photo.png" alt="plater man">
 </body>
 </html> 

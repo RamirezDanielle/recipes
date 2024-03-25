@@ -162,3 +162,41 @@ table, th, td {
    
   }
 
+/* -----view recipe----- */
+
+#recipe {
+    background: rgb(148, 191, 62 );
+}
+
+#recipe h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+#recipe h2 {
+    align-self: center;
+}
+
+#recipe .card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    border-radius: 10px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: bold;
+    background: yellowgreen;
+}
+
+#recipe .card:hover{ 
+    cursor: pointer;
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+
+#recipe img {
+    margin: auto 5px;
+    float: right;
+}
