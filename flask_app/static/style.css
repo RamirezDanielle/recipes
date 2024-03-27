@@ -134,7 +134,7 @@ form a {
 .dash_header h1, h4 {
     font-size: 25px;
     color: black;
-    margin-left: 10px;
+    margin-left: 6%;
     font-family: "Climate Crisis", sans-serif;
 }
 
@@ -200,3 +200,39 @@ table, th, td {
     margin: auto 5px;
     float: right;
 }
+
+
+/* -----new recipe----- */
+
+#new_recipe {
+    background: rgb(148, 191, 62 );
+}
+
+#new_recipe h1 {
+    color: black;
+}
+
+#new_recipe img {
+    margin-left: auto 10px;
+    float:right;
+    width:50%
+}
+
+#new_recipe h5 {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: bold;
+}
+
+
+
+ #new_recipe .form-check {
+    display:inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+#new_recipe .form-check input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0
+} 
