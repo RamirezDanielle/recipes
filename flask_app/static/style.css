@@ -1,21 +1,27 @@
 * {
     padding: 0px;
     margin: 0px;
+   
 }
 
 /* ----login and register---- */
+
+#index {
+    background: rgb(148, 191, 62);
+}
 
 .header {
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
     position: relative;
+   
 }
 
 h1 {
     font-family: "Climate Crisis", sans-serif;
-    font-size: 80px;
-    color: darkseagreen;
+    font-size: 100px;
+    color: black
 }
 
 h2 {
@@ -26,7 +32,7 @@ h2 {
 span {
     font-family: "Climate Crisis", sans-serif;
     font-size: 20px;
-    color: darkseagreen;
+    color: black;
 }
 .col {
     flex-basis: 50%;
@@ -42,26 +48,23 @@ span {
     padding: 20px 0;
     margin: auto;
     overflow: hidden;
+    
 }
 
 .form-container span{
-    font-weight: bold;
-    padding: 0 10px;
+    padding: 0 2px;
     cursor: pointer;
     width: 100px;
     display: inline-block;
 }
 
-.form-btn{
-    display: inline-block;
-}
 
 .form-container form{
     max-width: 250px;
     padding: 0 20px;
     display: block;
     position: absolute;
-    top: 130px;
+    top: 100px;
     transition: transform 1s;
 }
 
@@ -73,14 +76,35 @@ form input {
 }
 
 form .btn{
-    width: 100%;
-    border: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: black;
     cursor: pointer;
-    margin: 10px 0;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
 }
 
 form .btn:focus{
     outline: none;
+    color: black;
 }
 
 #login_form{
@@ -99,8 +123,8 @@ form a {
     width: 100px;
     border: none;
     height: 3px;
-    background: #555;
-    margin-top: 8px;
+    background: black;
+    margin-top: 5px;
     transform: translateX(100px);
     transition: transform 1s;
 }
@@ -148,6 +172,7 @@ form a {
 
 table {
     font-family: "Wix Madefor Display", sans-serif;
+    font-weight: bolder;
    
 }
 
@@ -156,10 +181,8 @@ table a {
 }
 
 table, th, td {
-    background: #9c3c3c;
+    background: #9c3c3cbb;
     text-align: center;
- 
-   
   }
 
 /* -----view recipe----- */
@@ -223,8 +246,6 @@ table, th, td {
     font-weight: bold;
 }
 
-
-
  #new_recipe .form-check {
     display:inline-flex;
     align-items: center;
@@ -235,4 +256,136 @@ table, th, td {
     margin-right: 5px;
     margin-top: 0;
     margin-bottom: 0
-} 
+}
+
+#new_recipe label {
+    margin: 5px;
+}
+
+#new_recipe .submit_button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+
+}
+
+
+#new_recipe .submit_button:disabled {
+  pointer-events: none;
+}
+
+#new_recipe .submit_button {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#new_recipe .submit_button {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* -----edit recipe----- */
+
+#edit_recipe {
+    background: rgb(148, 191, 62 );
+}
+
+#edit_recipe h1 {
+    color: black;
+}
+
+#edit_recipe img {
+    margin-left: auto 10px;
+    float:right;
+    width:50%
+}
+
+#edit_recipe h5 {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: bold;
+}
+
+ #edit_recipe .form-check {
+    display:inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+#edit_recipe .form-check input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+#edit_recipe label {
+    margin: 5px;
+}
+
+#edit_recipe .submit_button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+
+}
+
+
+#edit_recipe .submit_button:disabled {
+  pointer-events: none;
+}
+
+#edit_recipe .submit_button {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#edit_recipe .submit_button {
+  box-shadow: none;
+  transform: translateY(0);
+}
